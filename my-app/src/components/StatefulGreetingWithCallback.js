@@ -11,8 +11,8 @@ class StatefulGreetingWithCallback extends Component {
 
   handleClick() {
     this.setState({
-        introduction: "Goodbye",
-        buttonText: 'Enter'
+        introduction: this.state.introduction === "Hello!" ? "Goodbye" : "Hello!",
+        buttonText: this.state.buttonText === "Exit" ? "Enter" :  "Exit",
       });
     console.log('new state', this.state.introduction);
     console.log('new state', this.state.buttonText);

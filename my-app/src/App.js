@@ -1,16 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import FunctionalGreeting from './components/FunctionalGreeting';
-import FunctionalGreetingWithProps from './components/FunctionalGreetingWithProps';
-import StatefulGreeting from './components/StatefulGreeting';
-import StatefulGreetingWithCallback from './components/StatefulGreetingWithCallback';
+import "./App.css";
+import NestingComponents from "./components/NestingComponents";
 
 function App() {
-  return (
-    <div className="App">
-      <StatefulGreetingWithCallback greeting="I'm a stateful class component!" name="Mike" />
-    </div>
-  );
+  return <div className="App">
+      <NestingComponents />
+  </div>;
 }
 
 export default App;
